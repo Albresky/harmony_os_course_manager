@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name":"app_name",
+      "value": "管理DEMO"
+    },
+    {
+      "name": "entry_MainAbility",
+      "value": "entry_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "grade_edit",
+      "value": "Edit Course"
+    },
+    {
+      "name": "save",
+      "value": "Save"
+    },
+    {
+      "name": "edit",
+      "value": "Edit"
+    },
+    {
+      "name": "add",
+      "value": "+"
+    }
+  ]
+}
