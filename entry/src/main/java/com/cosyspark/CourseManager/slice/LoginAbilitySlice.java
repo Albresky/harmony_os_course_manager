@@ -1,6 +1,6 @@
 package com.cosyspark.CourseManager.slice;
 
-import com.cosyspark.coursemanager.ResourceTable;
+import com.cosyspark.CourseManager.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Button;
@@ -18,28 +18,32 @@ public class LoginAbilitySlice extends AbilitySlice {
 
         Button login = (Button) findComponentById(ResourceTable.Id_btn_login);
         login.setClickedListener(component -> {
-            String strUserId=user_id.getText();
-            String strUserPasswd=user_passwd.getText();
+            String strUserId = user_id.getText();
+            String strUserPasswd = user_passwd.getText();
             if (strUserPasswd.equals("admin")) {
                 new ToastDialog(getContext())
                         .setText("欢迎您")
                         .show();
-                switch (strUserId){
+                switch (strUserId) {
                     // account for student page test
                     case "20041423":
-                        present(new MainAbilitySlice(), new Intent());
+                        present(new QueryGradeAbilitySlice(), new Intent());
+                        terminate();
                         break;
                     // account for jwc page test
                     case "10000":
-                        present(new EntryInfoAbilitySlice(),new Intent());
+                        present(new EntryInfoAbilitySlice(), new Intent());
+                        terminate();
                         break;
                     // account for teacher page test
                     case "00001":
+                        present(new EntryGradeAbilitySlice(), new Intent());
+                        terminate();
                         break;
                     default:
                         break;
                 }
-            }else{
+            } else {
                 new ToastDialog(getContext())
                         .setText("用户信息错误")
                         .show();

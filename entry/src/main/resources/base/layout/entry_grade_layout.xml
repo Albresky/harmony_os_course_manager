@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:id="$+id:list_parent"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:round_border"
+        ohos:margin="20fp"
+        ohos:orientation="vertical"
+        ohos:padding="10vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text="教师:"
+                ohos:text_size="20fp"
+                ohos:weight="1"/>
+
+            <Text
+                ohos:id="$+id:teacher_name"
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text="王二"
+                ohos:text_size="20fp"
+                ohos:weight="2"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical">
+
+            <DirectionalLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="0px"
+                    ohos:text="工号"
+                    ohos:text_size="20fp"
+                    ohos:weight="1"/>
+
+                <TextField
+                    ohos:id="$+id:teacher_id"
+                    ohos:height="match_content"
+                    ohos:width="0px"
+                    ohos:text="44375327"
+                    ohos:text_size="20fp"
+                    ohos:weight="2"/>
+            </DirectionalLayout>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:round_border"
+        ohos:orientation="vertical"
+        ohos:padding="10vp">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:background_element="$graphic:round_border"
+            ohos:orientation="horizontal"
+            ohos:padding="2vp">
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text="姓名"
+                ohos:text_alignment="horizontal_center"
+                ohos:text_size="18fp"
+                ohos:weight="1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text="学号"
+                ohos:text_alignment="horizontal_center"
+                ohos:text_size="18fp"
+                ohos:weight="2"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text="成绩"
+                ohos:text_alignment="horizontal_center"
+                ohos:text_size="18fp"
+                ohos:weight="1"/>
+
+            <Text
+                ohos:height="match_content"
+                ohos:width="0px"
+                ohos:text=" "
+                ohos:text_alignment="horizontal_center"
+                ohos:text_size="18fp"
+                ohos:weight="1"/>
+
+        </DirectionalLayout>
+
+        <ListContainer
+            ohos:id="$+id:list_container"
+            ohos:height="0vp"
+            ohos:width="match_parent"
+            ohos:weight="1"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

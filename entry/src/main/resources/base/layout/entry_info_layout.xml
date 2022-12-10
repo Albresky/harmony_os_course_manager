@@ -8,162 +8,217 @@
     <Text
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:bottom_margin="50fp"
         ohos:text="学生基本信息"
         ohos:text_alignment="center"
-        ohos:text_size="28fp"/>
+        ohos:text_size="28fp"
+        ohos:top_margin="50fp"/>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:margin="10fp"
         ohos:orientation="horizontal">
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
             ohos:text="学号:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
         <TextField
             ohos:id="$+id:user_id"
             ohos:height="match_content"
             ohos:width="0px"
+            ohos:background_element="$graphic:round_border"
             ohos:hint="20001234"
+            ohos:padding="4fp"
             ohos:text_size="18fp"
-            ohos:weight="2"/>
+            ohos:weight="1"/>
     </DirectionalLayout>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:margin="10fp"
         ohos:orientation="horizontal">
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
-            ohos:text="学生姓名:"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
+            ohos:text="姓名:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
         <TextField
             ohos:id="$+id:user_name"
             ohos:height="match_content"
             ohos:width="0px"
+            ohos:background_element="$graphic:round_border"
             ohos:hint="张三"
+            ohos:max_text_lines="1"
+            ohos:padding="4fp"
+            ohos:text_input_type="pattern_text"
             ohos:text_size="18fp"
-            ohos:weight="2"/>
+            ohos:weight="1"/>
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
             ohos:text="性别:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
-        <Picker
-            ohos:id="$+id:gender"
+        <RadioContainer
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:normal_text_size="18fp"
-            ohos:weight="2"/>
+            ohos:width="match_parent"
+            ohos:orientation="horizontal"
+            ohos:padding="4fp"
+            ohos:weight="1">
+
+            <RadioButton
+                ohos:id="$+id:gender_male"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="男"
+                ohos:text_size="18fp"/>
+
+            <RadioButton
+                ohos:id="$+id:gender_female"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="女"
+                ohos:text_size="18fp"/>
+        </RadioContainer>
 
     </DirectionalLayout>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:margin="10fp"
+
         ohos:orientation="horizontal">
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
             ohos:text="年级:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
-        <Picker
+        <TextField
             ohos:id="$+id:s_grade"
             ohos:height="match_content"
             ohos:width="0px"
+            ohos:background_element="$graphic:round_border"
+            ohos:hint="2020"
+            ohos:max_text_lines="1"
+            ohos:padding="4fp"
+            ohos:text_input_type="pattern_number"
             ohos:text_size="18fp"
-            ohos:weight="2"/>
+            ohos:weight="1"/>
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
             ohos:text="班级:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
-        <Picker
+        <TextField
             ohos:id="$+id:s_class"
             ohos:height="match_content"
             ohos:width="0px"
-            ohos:normal_text_size="18fp"
-            ohos:weight="2"/>
+            ohos:background_element="$graphic:round_border"
+            ohos:hint="20052312"
+            ohos:max_text_lines="1"
+            ohos:padding="4fp"
+            ohos:text_input_type="pattern_number"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
 
     </DirectionalLayout>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:margin="10fp"
         ohos:orientation="horizontal">
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
             ohos:text="手机号:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
         <TextField
             ohos:id="$+id:phone_number"
             ohos:height="match_content"
             ohos:width="0px"
-            ohos:normal_text_size="18fp"
-            ohos:weight="2"/>
+            ohos:background_element="$graphic:round_border"
+            ohos:hint="15888888888"
+            ohos:max_text_lines="1"
+            ohos:padding="4fp"
+            ohos:text_input_type="pattern_number"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
 
     </DirectionalLayout>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
+        ohos:margin="10fp"
         ohos:orientation="horizontal">
 
         <Text
             ohos:height="match_content"
-            ohos:width="0px"
-            ohos:margin="2fp"
+            ohos:width="match_content"
+            ohos:left_margin="2fp"
+            ohos:padding="4fp"
+            ohos:right_margin="2fp"
             ohos:text="家庭住址:"
             ohos:text_alignment="left"
             ohos:text_size="18fp"
-            ohos:weight="1"
             />
 
         <TextField
             ohos:id="$+id:home_address"
             ohos:height="match_content"
             ohos:width="0px"
-            ohos:normal_text_size="18fp"
-            ohos:weight="2"/>
+            ohos:background_element="$graphic:round_border"
+            ohos:hint="浙江省杭州市钱塘区杭州电子科技大学生活区C幢999室"
+            ohos:max_text_lines="2"
+            ohos:padding="4fp"
+            ohos:text_input_type="pattern_text"
+            ohos:text_size="18fp"
+            ohos:weight="1"/>
 
     </DirectionalLayout>
 
@@ -171,27 +226,42 @@
         ohos:id="$+id:ps"
         ohos:height="200fp"
         ohos:width="match_parent"
-        ohos:margin="20fp"
         ohos:background_element="$graphic:round_border"
+        ohos:hint="备注"
+        ohos:left_margin="12fp"
+        ohos:end_margin="12fp"
+        ohos:top_margin="10fp"
         ohos:max_text_lines="10"
-        ohos:hint="备注"/>
+        ohos:padding="4fp"
+        ohos:right_margin="20fp"
+        ohos:text_size="18fp"/>
 
     <DirectionalLayout
         ohos:height="match_content"
         ohos:width="match_parent"
-        ohos:orientation="horizontal">
+        ohos:alignment="center"
+        ohos:margin="50fp"
+        ohos:orientation="horizontal"
+        >
 
         <Button
             ohos:id="$+id:btn_load_info"
             ohos:height="match_content"
             ohos:width="match_content"
-            ohos:text="载入信息"/>
+            ohos:background_element="$graphic:btn_style"
+            ohos:padding="5fp"
+            ohos:right_margin="50fp"
+            ohos:text="读取信息"
+            ohos:text_size="20fp"/>
+
         <Button
             ohos:id="$+id:btn_save_info"
             ohos:height="match_content"
             ohos:width="match_content"
-            ohos:text="载入信息"/>
+            ohos:background_element="$graphic:btn_style"
+            ohos:padding="5fp"
+            ohos:text="录入信息"
+            ohos:text_size="20fp"/>
     </DirectionalLayout>
-
 
 </DirectionalLayout>

@@ -8,7 +8,7 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.cosyspark.coursemanager",
+    "package": "com.cosyspark.CourseManager",
     "name": ".MainAbility",
     "reqCapabilities": [
       "video_support"

@@ -77,7 +77,7 @@
         ohos:id="$+id:btn_login"
         ohos:height="50fp"
         ohos:width="100fp"
-        ohos:background_element="$graphic:login_style"
+        ohos:background_element="$graphic:btn_style"
         ohos:layout_alignment="horizontal_center"
         ohos:left_margin="100fp"
         ohos:right_margin="100fp"
