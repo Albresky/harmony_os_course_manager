@@ -5,6 +5,7 @@ import com.cosyspark.CourseManager.ResourceTable;
 import com.cosyspark.CourseManager.bean.Grade;
 import ohos.agp.components.*;
 import ohos.agp.window.dialog.CommonDialog;
+import ohos.agp.window.dialog.ToastDialog;
 import ohos.app.Context;
 
 import java.util.List;
@@ -69,10 +70,23 @@ public class StudentItemProvider extends BaseItemProvider {
     private void showContactDetailDialog(Grade grade, int position) {
         Component container = LayoutScatter.getInstance(context).parse(ResourceTable.Layout_dialog_layout, null, false);
         TextField d_grade = (TextField) container.findComponentById(ResourceTable.Id_grade);
+
         d_grade.setText(grade.getStuGrade());
         Button btnOk = (Button) container.findComponentById(ResourceTable.Id_btn_ok);
 
-        btnOk.setClickedListener(component -> saveEdit(d_grade.getText(), position));
+        btnOk.setClickedListener(component -> {
+            int grade1 = Integer.valueOf(d_grade.getText());
+            if (grade1 >= 0 && grade1 <= 100) {
+                new ToastDialog(context)
+                        .setText("成绩录入成功！")
+                        .show();
+                saveEdit(d_grade.getText(), position);
+            } else {
+                new ToastDialog(context)
+                        .setText("成绩非法！")
+                        .show();
+            }
+        });
         commonDialog = new CommonDialog(context);
         commonDialog.setSize(DIALOG_WIDTH, DIALOG_HEIGHT);
         commonDialog.setCornerRadius(DIALOG_CORNER_RADIUS);

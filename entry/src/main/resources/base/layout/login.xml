@@ -39,6 +39,7 @@
                 ohos:id="$+id:user_id"
                 ohos:height="match_content"
                 ohos:width="0px"
+                ohos:max_text_lines="1"
                 ohos:hint="请输入工号"
                 ohos:text_alignment="left"
                 ohos:text_input_type="pattern_number"

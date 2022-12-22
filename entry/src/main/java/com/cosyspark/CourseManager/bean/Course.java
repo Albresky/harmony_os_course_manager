@@ -6,9 +6,9 @@ public class Course {
     private String point;
     private String mark;
 
-    public Course(String name,String id, String point, String mark) {
+    public Course(String name, String id, String point, String mark) {
         this.name = name;
-        this.id=id;
+        this.id = id;
         this.point = point;
         this.mark = mark;
     }

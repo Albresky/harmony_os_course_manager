@@ -58,6 +58,6 @@ public class EntryGradeAbilitySlice extends AbilitySlice {
     }
 
     private void addStudent(int index) {
-        gradeData.add(new Grade(stuNames.get(index), stuIds.get(index),"/"));
+        gradeData.add(new Grade(stuNames.get(index), stuIds.get(index), "/"));
     }
 }

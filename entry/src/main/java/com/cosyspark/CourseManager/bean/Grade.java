@@ -7,11 +7,11 @@ public class Grade {
 
     private String stuGrade;
 
-    public Grade(String stuName,String stuId,String stuGrade){
-        this.stuName=stuName;
-        this.stuId=stuId;
-        this.stuGrade=stuGrade;
-        this.stuGrade=stuGrade;
+    public Grade(String stuName, String stuId, String stuGrade) {
+        this.stuName = stuName;
+        this.stuId = stuId;
+        this.stuGrade = stuGrade;
+        this.stuGrade = stuGrade;
     }
 
     public void setStuName(String stuName) {
